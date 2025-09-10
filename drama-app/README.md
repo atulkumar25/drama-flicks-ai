@@ -1,6 +1,6 @@
-# DramaHub - Next.js Drama Streaming App
+# DramaBox - Next.js Drama Streaming App
 
-A modern, responsive drama streaming application built with Next.js 15, TypeScript, and Tailwind CSS. This application was created from a Figma design to showcase a complete drama streaming platform with multiple interconnected pages and reusable components.
+A modern, mobile-first drama streaming application built with Next.js 15, TypeScript, and Tailwind CSS. This application was redesigned to match authentic drama app aesthetics with a focus on mobile user experience and modern UI patterns inspired by popular streaming platforms.
 
 ## 🚀 Features
 
@@ -21,11 +21,13 @@ A modern, responsive drama streaming application built with Next.js 15, TypeScri
 - **Drama Rows**: Horizontal scrolling content sections
 
 ### Technical Features
-- **Responsive Design**: Fully responsive across all device sizes
-- **Dark Theme**: Consistent dark theme throughout the application
+- **Mobile-First Design**: Optimized for mobile with bottom navigation and touch-friendly interactions
+- **Adaptive Theming**: Smart dark/light theme system with drama app color palette
 - **TypeScript**: Full type safety and better development experience
-- **Modern UI/UX**: Clean, modern interface inspired by popular streaming platforms
+- **Authentic UI/UX**: Modern drama app interface with pink/violet accent colors and rounded design
 - **Performance Optimized**: Optimized images, lazy loading, and efficient rendering
+- **Bottom Navigation**: Native mobile app experience with bottom tab navigation
+- **Card-Based Layout**: Modern card-based design with hover effects and animations
 
 ## 🛠 Technology Stack
 
