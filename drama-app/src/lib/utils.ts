@@ -14,8 +14,8 @@ export const mockDramas = [
     rating: 9.2,
     episodes: 16,
     status: "Completed",
-    poster: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=300&h=400&fit=crop",
-    backdrop: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=800&h=450&fit=crop",
+    poster: "https://images.unsplash.com/vector-1756365681486-615455939f4e?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    backdrop: "https://images.unsplash.com/vector-1756365681486-615455939f4e?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description: "A heartwarming story of love that blooms under the moonlight between two souls from different worlds.",
     cast: ["Lee Min-ho", "Park Shin-hye", "Kim Woo-bin"],
     director: "Kim Eun-sook"
