@@ -17,20 +17,14 @@ interface Drama {
   description: string
 }
 
-interface DramaRowProps {
+export interface DramaRowProps {
   title: string
   dramas: Drama[]
   variant?: "default" | "compact" | "featured"
-<<<<<<< HEAD
-}
-
-export function DramaRow({ title, dramas, variant = "default" }: DramaRowProps) {
-=======
   showMore?: boolean
 }
 
 export function DramaRow({ title, dramas, variant = "default", showMore = false }: DramaRowProps) {
->>>>>>> 16fa85071ee1dde0fd0325629937d156e1a69d03
   const scrollRef = useRef<HTMLDivElement>(null)
 
   const scrollLeft = () => {
@@ -49,27 +43,6 @@ export function DramaRow({ title, dramas, variant = "default", showMore = false 
     <section className="py-8">
       <div className="container mx-auto px-4">
         {/* Header */}
-<<<<<<< HEAD
-        <div className="flex items-center justify-between mb-6">
-          <h2 className="text-2xl font-bold text-white">{title}</h2>
-          <div className="flex space-x-2">
-            <Button
-              size="icon"
-              variant="ghost"
-              onClick={scrollLeft}
-              className="text-gray-400 hover:text-white hover:bg-gray-800"
-            >
-              <ChevronLeft className="w-5 h-5" />
-            </Button>
-            <Button
-              size="icon"
-              variant="ghost"
-              onClick={scrollRight}
-              className="text-gray-400 hover:text-white hover:bg-gray-800"
-            >
-              <ChevronRight className="w-5 h-5" />
-            </Button>
-=======
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-xl font-bold text-foreground">{title}</h2>
           <div className="flex items-center space-x-2">
@@ -96,7 +69,6 @@ export function DramaRow({ title, dramas, variant = "default", showMore = false 
                 <ChevronRight className="w-4 h-4" />
               </Button>
             </div>
->>>>>>> 16fa85071ee1dde0fd0325629937d156e1a69d03
           </div>
         </div>
 

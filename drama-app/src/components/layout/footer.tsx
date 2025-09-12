@@ -12,7 +12,7 @@ export function Footer() {
               <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">D</span>
               </div>
-              <span className="text-white font-bold text-xl">DramaHub</span>
+              <span className="text-white font-bold text-xl">DramaFlicks</span>
             </Link>
             <p className="text-gray-400 text-sm mb-4 max-w-md">
               Your ultimate destination for Asian dramas. Discover, watch, and fall in love with 
@@ -91,7 +91,7 @@ export function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2024 DramaHub. All rights reserved.
+            © 2024 DramaFlicks. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link href="#" className="text-gray-400 hover:text-white transition-colors text-sm">

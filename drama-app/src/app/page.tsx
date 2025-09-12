@@ -1,42 +1,23 @@
 import { HeroSection } from "@/components/hero-section"
 import { DramaRow } from "@/components/drama-row"
-<<<<<<< HEAD
-import { mockDramas } from "@/lib/utils"
-
-export default function Home() {
-  const trendingDramas = mockDramas
-  const newReleases = mockDramas.slice(0, 3)
-  const popularDramas = [...mockDramas].reverse()
-  const romanceDramas = mockDramas.filter(drama => drama.genre.includes("Romance"))
-=======
 import { DramaCard } from "@/components/drama-card"
 import { CategoryTabs } from "@/components/category-tabs"
 import { TrendingSection } from "@/components/trending-section"
 import { mockDramas } from "@/lib/utils"
 
 export default function Home() {
-  const featuredDramas = mockDramas.slice(0, 3)
   const trendingDramas = mockDramas
   const newReleases = mockDramas.slice(0, 6)
   const popularDramas = [...mockDramas].reverse()
   const romanceDramas = mockDramas.filter(drama => drama.genre.includes("Romance"))
   const koreanDramas = mockDramas.slice(0, 5)
   const ongoingDramas = mockDramas.filter(drama => drama.status === "Ongoing")
->>>>>>> 16fa85071ee1dde0fd0325629937d156e1a69d03
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
       <HeroSection />
 
-<<<<<<< HEAD
-      {/* Content Sections */}
-      <div className="space-y-8 pb-12">
-        <DramaRow title="Trending Now" dramas={trendingDramas} />
-        <DramaRow title="New Releases" dramas={newReleases} variant="compact" />
-        <DramaRow title="Popular Dramas" dramas={popularDramas} />
-        <DramaRow title="Romance Collection" dramas={romanceDramas} />
-=======
       {/* Content */}
       <div className="container mx-auto px-4 space-y-8 py-8">
         {/* Category Tabs */}
@@ -53,7 +34,17 @@ export default function Home() {
           </div>
           <div className="space-y-3">
             {mockDramas.slice(0, 3).map((drama) => (
-              <DramaCard key={`continue-${drama.id}`} drama={drama} variant="list" />
+              <div key={`continue-${drama.id}`} className="bg-card rounded-2xl border p-3 flex items-center space-x-3">
+                <div className="relative w-16 h-20 flex-shrink-0 overflow-hidden rounded-md">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={drama.poster} alt={drama.title} className="w-full h-full object-cover" />
+                </div>
+                <div className="min-w-0 flex-1">
+                  <p className="font-medium truncate">{drama.title}</p>
+                  <p className="text-xs text-muted-foreground truncate">{drama.description}</p>
+                </div>
+                <button className="text-sm text-primary hover:text-primary/80 whitespace-nowrap">Resume</button>
+              </div>
             ))}
           </div>
         </section>
@@ -62,32 +53,27 @@ export default function Home() {
         <DramaRow 
           title="🔥 Hot This Week" 
           dramas={trendingDramas} 
-          showMore={true}
         />
         
         <DramaRow 
           title="🆕 New Releases" 
           dramas={newReleases} 
           variant="compact"
-          showMore={true}
         />
         
         <DramaRow 
           title="🇰🇷 Korean Dramas" 
           dramas={koreanDramas}
-          showMore={true}
         />
         
         <DramaRow 
           title="💕 Romance Collection" 
           dramas={romanceDramas}
-          showMore={true}
         />
         
         <DramaRow 
           title="📺 Currently Airing" 
           dramas={ongoingDramas}
-          showMore={true}
         />
 
         {/* Recommended for You */}
@@ -102,7 +88,6 @@ export default function Home() {
             ))}
           </div>
         </section>
->>>>>>> 16fa85071ee1dde0fd0325629937d156e1a69d03
       </div>
     </div>
   )
