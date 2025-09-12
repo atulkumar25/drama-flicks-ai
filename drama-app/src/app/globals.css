@@ -49,7 +49,7 @@
   }
 }
 
-@layer base {
+/* @layer base {
   * {
     @apply border-gray-200 dark:border-gray-800;
   }
@@ -57,7 +57,7 @@
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
-}
+} */
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
